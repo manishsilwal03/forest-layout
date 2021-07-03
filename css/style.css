@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ###################### utility class ############################# */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    font-size: medium;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 2em;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.btn-primary{
+    color: #fff;
+    background: lightgreen;
+}
+.btn-secondary{
+    color: lightgreen;
+    background: #ff9;
+}
+.text-black{
+    color: #000;
+}
+
+/* ####################### header styling ################################ */
+
+.header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)) ,url("../image/backgrounds.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.menu-items li{
+    list-style: none;
+    margin-left: 1.8rem;
+    font-size: 1.8rem;
+}
+
+.menu-items li:first-child{
+    margin-left: 0;
+}
+.menu-items li:last-child{
+    margin-right: 0;
+}
+.logo{
+    order: 1;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: lightgreen;
+}
+
+/* # ############################ header content styling############### */
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 100%;
+    /* margin: ; */
+}
+.header-content p{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.main-title{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 100;
+}
+.edited-title{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+/* ################################### home area styling ######################## */
+
+.home-area{
+    padding: 50px 0;
+    background: #fff;
+}
+.text-frame{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+}
+.text-frame .small{
+    font-size: 2rem;
+    color: seagreen;
+    font-weight: 600;
+}
+.text-frame h1{
+    font-size: 3.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.text-frame p{
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+    color: rgb(95, 82, 82);
+}
+
+/* #######################about text styling###################### */
+.about-page{
+    padding: 50px 0;
+    background: #fff;
+}
+.about-page{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-img{
+    flex: 1 1 400px;
+    padding: 30px;
+}
+.about-text{
+    flex: 1 1 400px;
+    padding: 30px;
+}
+.about-img img{
+    display: block;
+    height: 500px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: left;
+}
+
+.about-text .small{
+    font-size: 2rem;
+    color: rgb(109, 207, 152);
+    font-weight: 600;
+}
+.about-text h2{
+    font-size: 3rem;
+    margin-top: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1;
+}
+.about-text p{
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+    color: rgb(95, 82, 82);   
+}
+.percentage{
+    padding: 30px 0;
+    background: #fff;
+}
+.percentage{
+    display: flex;
+}
+.percentage .nine{
+    display: block;
+    margin: 3px;
+    padding: 0rem;
+    width: 100%;
+}
+.percentage .nine img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* #####################services styling################################### */
+
+.services-area{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)) ,url("../image/services.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.service-description{
+    width: 85%;
+    display: flex;
+    padding: 60px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.service-para{
+    color: #fff;
+    font-size: 1.6rem;
+    width: 40%;
+}
+.service-head h2{
+    color: lightgreen;
+    font-size: 2rem;
+}
+.service-head h1{
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.service-wrapper{
+    padding: 50px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    
+}
+.service-types{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+.service-wrapper .service-kinds{
+    background: #fff;
+    margin: 1.5rem 1.5rem;
+    display: block;
+    width: 320px;
+    height: 220px;
+    justify-content: center;
+    text-align: center;
+    padding: 1.8rem;
+}
+.service-tag{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color:rgb(87, 226, 87);
+    padding: 1.3rem;
+}
+.service-txt{
+    font-size: 1.4rem;
+    color: rgb(114, 104, 104);
+    padding: 1.3rem;
+}
+
+/* ############################ gallery styling ##################### */
+
+.gallery{
+    padding: 50px 0;
+    background: #fff;
+}
+.gallery-container{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text-gallery{
+    font-size: 1.6rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-heading{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.gallery-h2{
+    font-size: 2.1rem;
+    color: lightgreen;
+}
+.gallery-h1{
+    font-size: 3.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+/* ################################ icon items styling ######################## */
+
+.icon-section{
+    padding: 5rem 0rem;
+    background: lightgreen;
+}
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    padding: 1rem;
+}
+.icon-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.icon-container .icon-color{
+    color: #fff;
+    margin: 0;
+}
+
+.icon-set{
+    display: block;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    /* padding: 3.6rem; */
+
+}
+.icon-set h2{
+    font-size: 3.6rem;
+    margin-bottom: 1.6rem;
+    font-weight: 400;
+    color: #000;
+}
+.icon-set h1{
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ feature styling@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.feature{
+    padding: 50px 0;
+    background: #f5f5f7;
+}
+.feature-text{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.feature-para p{
+    color: lightslategray;
+    font-size: 1.6rem;
+    width: 80%;
+}
+.feature-head h2{
+    color: lightgreen;
+    font-size: 2rem;
+}
+.feature-head h1{
+    color: #000;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 200;
+}
+
+.feature-container{
+    display: flex;
+}
+.feature-image{
+    flex: 1 1 300px;
+    padding: 30px;
+}
+.feature-text-container{
+    flex: 1 1 300px;
+    padding: 30px;
+    margin: auto;
+}
+.feature-image img{
+    display: block;
+    width: 90%;
+    max-width: 100%;
+    height: 500px;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.feature-text-container{
+display: flex;
+flex-direction: column;
+
+}
+.feature-text-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.feature-text-wrap{
+    border: 2px solid red;
+    width: 90%;
+    margin-bottom: 5rem;
+}
+.feature-text-container i{
+    display: block;
+}
+.checked h1{
+    color: rgb(28, 184, 61);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.checked p{
+    color: lightslategray;
+    font-size: 1.6rem;
+}
+.feature-text-container .iconz{
+    display: block;
+    object-position: center;
+}
+
+/* ########################### plans styling ##################################### */
+
+.plans{
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)) ,url("../image/gallery3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.plans-container{
+    width: 85%;
+    display: flex;
+    padding: 50px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.plans-para{
+    color: #fff;
+    font-size: 1.6rem;
+    width: 40%;
+}
+.plans-head h2{
+    color: lightgreen;
+    font-size: 2rem;
+}
+.plans-head h1{
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.plans-wrapper{
+    padding: 50px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    
+}
+.plans-types{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.plans-wrapper .plans-kinds{
+    background: #fff;
+    margin: 1rem 1.5rem;
+    display: block;
+    width: 280px;
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+    padding: 1.8rem;
+}
+.plans-tag{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color:rgb(87, 226, 87);
+    padding: 1.3rem;
+}
+.plans-txt{
+    font-size: 1.4rem;
+    color: rgb(114, 104, 104);
+    padding: 1.3rem;
+}
+
+/* ############################### clients styling ################################## */
+
+.clients{
+    padding: 50px 0;
+    background: #f5f5f7;
+}
+.clients-text{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.clienst-para p{
+    color: lightslategray;
+    font-size: 3.2rem;
+    width: 80%;
+}
+.clients-head h2{
+    color: lightgreen;
+    font-size: 2rem;
+}
+.clienst-head h1{
+    color: #000;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+}
+.clients-container{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+}
+.clients-container{
+    display: flex;
+    justify-content: center;
+}
+.clients-wrapper{
+    padding: 50px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.clients-wrapper img{
+    display: block;
+    width: 25%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 4rem;
+}
+
+.clients-wrapper .clients-head{
+    color: rgb(49, 206, 49);
+    font-size: 3.2rem;
+}
+.clients-wrapper h2{
+    font-size: 1.9rem;
+}
+.clients-wrapper .clients-para{
+    font-size: 1.6rem;
+    width: 29%;
+}
+
+/* .plans-wrapper{
+    padding: 50px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap; */
+    /* flex-direction: column; */
+    
+/* } */
+/* .plans-types{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+} */
+
+
+
+
+
+
+
+
+
